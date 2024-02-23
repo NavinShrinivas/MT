@@ -8,6 +8,7 @@ public class Student implements Comparable<Student> {
     String IDE;
     String College;
     String gender;
+
     public Student(String name, int age, String IDE, String College, String gender){
         this.name = name;
         this.age = age;
@@ -25,4 +26,12 @@ public class Student implements Comparable<Student> {
     public String toString(){
         return "Student: "+this.name+"| age: "+this.age+"| IDE: "+this.IDE;
     }
+
+    public int SomeLogic(int x, int y){
+        return (x*y)/MoreLogic();
+    }
+    int MoreLogic(){
+        return 10;
+    }
 }
+

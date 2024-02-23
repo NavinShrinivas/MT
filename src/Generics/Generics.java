@@ -12,7 +12,6 @@ public class Generics {
         for(Object o : list){
             sum+=(int)o;
         }
-
         ExampleClass1 ex1 = new ExampleClass1(2,3);
         ExampleClass2 ex2 = new ExampleClass2(2,3);
         BoundedGeneric bg = new BoundedGeneric(ex1);

@@ -1,12 +1,14 @@
 package Generics;
 
+import java.awt.print.Printable;
+
 public class BoundedGeneric<T extends SomeImplementation>{
     SomeImplementation x;
     public BoundedGeneric(T x){
         this.x = x;
     }
 
-    public int something_nice(T y){
+    public  int something_nice(T y){
         return this.x.collateExample()+y.collateExample();
     }
 }
